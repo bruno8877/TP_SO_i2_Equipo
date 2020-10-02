@@ -1,0 +1,41 @@
+
+a- Git remote add upstream https://github.com/bruno8877/TP_SO_i2_Equipo113
+
+git fetch upstream
+
+
+Git checkout main
+
+
+Git rebase upstream/main
+
+b- Si, haciendo lo mismo que el paso anterior pero con el link del repo de GAMMA, luego hacer commit y push.
+
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA? Si, haciendo los pasos ya nombrados pero con el repo de ALFA.
+
+d-¿Los datos que tenia en mi repositorio , editados por mi, se pierden si quiero actualizar el fork? No se pierden se actualizan. 
+
+e)
+Lema Bruno
+Santoliquido Juan Luca
+Jaimez Maria Luana
+
+Comandos utilizados:
+git init //crea un repo
+git remote add https://github.com/bruno8877/TP_SO_i2_Equipo113
+Se modifica el archivo fork.txt
+git add . (dentro de la carpeta descargada)
+git commit -m "modificacion de archivo fork"
+git push
+
+Comandos para actualizar:
+git clone https://github.com/tuUsuario/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+git remote add upstream https://github.com/bruno8877/TP_SO_i2_Equipo113.git
+git fetch upstream
+git checkout main
+En este punto aparece
+alreqdy on main
+Your branch is up to date
+git rebase upstream/main
+Tira successfully rebased and updated refs/head/main.
